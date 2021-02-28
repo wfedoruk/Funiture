@@ -1,0 +1,707 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27281b9eec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Funiture</title>
+</head>
+<body>
+   <div class="header" id="header">
+      <div class="contayner">
+           <div class="header_sup">
+             <div>(+123) 456 789</div>
+             <div class = "header_login">
+                <div>Log in</div>
+				<span>or</span>	
+                <div>Register</div>
+             </div>
+           </div>
+           <div class="header_logo">
+			   <div>
+					<img src="assets/Logo@1X.png" alt="">
+			   </div>
+          	   <div>
+         	   		<form action="">
+						<img src="assets/Search@1X.png" alt="">
+						<input type="text" placeholder="Search Products...">
+          	   		</form>
+          	   </div>
+           </div>
+       </div>
+        <div class="header_nav">
+           <div class="contayner contayner_nav">
+          		<div class="nav_inner">
+          			<p id="home"><a href="index.html">Home</a></p>
+					<p><a href="">Living room</a></p>
+					<p><a href="">Office</a></p>
+					<p><a href="">Bedroom</a></p>
+					<p><a href="">Blog</a></p>
+					<p><a href="">Contact</a></p>
+           		</div>
+           		<div class="nav_inner">
+           			<input type="image" src="assets/Bag@1X.png">
+           		</div>
+           </div>
+        </div>
+	</div><!--Head-->
+	
+	<div class="shop">
+    <div class="contayner contayner--gray">
+      <div class="shop_title">
+           <h2>Shop</h2>
+
+            <p><a href="index.html">Home</a>/products</p>
+      </div>
+   
+      <div class="shop_items">
+
+           <div class="sidebar">
+               <div class="siderbar_search">
+                  <form>
+                      <input type="text" placeholder="Search product" label="">
+                   </form>
+                   <div class="search_icon">
+                           <img src="assets/search.png" alt="">
+                   </div>
+                   
+               </div>
+               <div class="slider1_items">
+                  <button class="siderbar_titles">
+                      <p>Filter by price</p>
+                  </button>
+                  <ul class ="slider1_inner">
+                        <li>
+                           <div class ="slider1">
+                                  <div id="slider-range"></div>
+                            </div>
+                        </li>
+                        <li>
+                           <div class="filter_icons">
+                                <div class="filter_icon">
+
+                                      <input type="text" id="amount1" >
+                                </div>
+                                <div class="filter_icon">
+
+                                      <input type="text" id="amount2" >
+                                </div>
+                                <div class="filter_icon">
+                                  <button type="submit">Filter</button>
+                                 </div>
+                           </div>
+                        </li>
+                     </ul>
+                 </div>
+                 <div class="siderbar_categories">
+
+                    <button class="siderbar_titles">
+                    	<p href="#">By categories</p>
+                    </button>
+
+                    <ul class="categories">
+                        <li><i class="fas fa-tshirt"></i><a href= "#">Aran Sweater</a></li>
+                        <li><i class="fas fa-tshirt"></i><a href= "#"> Sweater</a></li>
+                        <li><i class="fas fa-tshirt"></i><a href= "#">Tree of Life</a></li>
+                         <li><i class="fas fa-tshirt"></i><a href= "#">Celtic Knot Jewelry</a></li>
+                         <li><i class="fas fa-tshirt"></i><a href= "#">Irish Blessing</a></li>
+                         <li><i class="fas fa-tshirt"></i><a href= "#">Claddagh Rings</a></li>
+                         <li><i class="fas fa-tshirt"></i><a href= "#">Aran Sweater</a></li>
+
+                    </ul>
+
+                 </div>
+                 <div class="sales_prod">
+                   	<button class="siderbar_titles">
+                   		<p>Sales products</p>
+                   	</button>
+
+                    <ul class="categories">
+                        <li>
+                            <div class="sales_items">
+                                <img src="http://placehold.it/80">
+                                <div class="sales_items--text" >
+                                    <p>Aran Sweater</p>
+                                    <p><span>$500</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sales_items">
+                                <img src="http://placehold.it/80">
+                                <div class="sales_items--text" >
+                                    <p>Aran Sweater</p>
+                                    <p><span>$500</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sales_items">
+                                <img src="http://placehold.it/80">
+                                <div class="sales_items--text" >
+                                    <p>Aran Sweater</p>
+                                    <p><span>$500</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sales_items">
+                                <img src="http://placehold.it/80">
+                                <div class="sales_items--text" >
+                                    <p>Aran Sweater</p>
+                                    <p><span>$500</span></p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+           </div>
+           <div class="product_table">
+               <div class="shop_sort">
+                   <div ><p>Sort by</p></div>
+                   <select name = "select_product" id = "select">
+                         <option>popular</option>
+                          <option>price</option>
+                          <option>name</option>
+                   </select>
+
+                   <div class="sort_icons">
+                   		 <input type="radio" id="sqw" value="sqw" name="sort" checked>
+                          <label for="sqw"><i class="fab fa-microsoft" href="#"></i></label>
+                          <input type="radio" id="line" value="line" name="sort">
+                          <label for="line"><i class="fas fa-list" href="#"></i></label>
+                   
+<!--
+                        <div class="sqw"><i class="fab fa-microsoft" href="#"></i></div>
+                        <div class="line"><i class="fas fa-list" href="#"></i></div>
+-->
+                   </div>
+               </div>
+               <div class="product_list">
+                   <div class="products_items products_shop">
+					
+							<div class="items_text">
+								<h4>B Denim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+								<div class="items_list">
+									<p content= "USD">$130</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>130</span>	 
+						   </div>
+					
+					</div>
+
+                    <div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>PDenim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+							<div class="items_list">
+									<p content= "USD">$135</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>135</span>	 
+						   </div>
+					
+					</div>
+
+                  <div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>ADenim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+							<div class="items_list">
+									<p content= "USD">$105</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>105</span>	 
+						   </div>
+						
+					</div>
+                   <div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>KDenim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+							<div class="items_list">
+									<p content= "USD">$115</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>115</span>	 
+						   </div>
+						
+					</div>
+                  <div class="products_items products_shop">
+					
+							<div class="items_text">
+								<h4>MDenim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+							<div class="items_list">
+									<p content= "USD">$125</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>125</span>	 
+						   </div>
+					
+					</div>
+                   <div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>T Denim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+							<div class="items_list">
+									<p content= "USD">$100</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>100</span>	 
+						   </div>
+						
+					</div>
+                    <div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>X Denim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+							<div class="items_list">
+									<p content= "USD">$110</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>110</span>	 
+						   </div>
+						
+					</div>
+                    <div class="products_items products_shop">
+					
+							<div class="items_text">
+								<h4>E Denim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+								<div class="items_list">
+									<p content= "USD">$135</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>135</span>	 
+						   </div>
+					
+					</div>
+                   <div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>D Denim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+							<div class="items_list">
+									<p content= "USD">$140</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>140</span>	 
+						   </div>
+					
+					</div>
+              		<div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>S Denim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+								<div class="items_list">
+									<p content= "USD">$120</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>120</span>	 
+						   </div>
+					
+					</div>
+              		<div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>Q Denim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+								<div class="items_list">
+									<p content= "USD">$100</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>100</span>	 
+						   </div>
+					
+					</div>
+              		<div class="products_items products_shop">
+						
+							<div class="items_text">
+								<h4>Z Denim Chart In Slim Fit</h4>
+								<p><span>Living room</span></p>
+								<div class="items_list">
+									<p content= "USD">$105</p>
+								 </div>
+							</div>
+							
+							<div class="items_img">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product2.png" alt="">
+							</div>
+							<div class="items_img items_list">
+								<img class="img" src="assets/product1.png" alt="">
+							</div>
+							<div class="items_cost">
+								<p content= "USD">$</p>
+								<span>105</span>	 
+						   </div>
+					
+					</div>
+               		
+			 </div><!--product_list-->
+			<div class="shop_sort sort_two">
+						<div ><p>Sort by</p></div>
+							  <select name = "select_product select2" >
+								 <option>popular</option>
+								  <option>price</option>
+								  <option>name</option>
+							   </select>
+
+						<div class="shop_icons icons_num">
+						   <a href="#">1</a>
+						   <a href="#">2</a>
+						   <a class="fas fa-caret-right" href="#"></a>
+
+						</div>
+               		</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+	<div class="contayner">
+		<div class="supfooter">
+			<div class="newsletter">
+				<div class="newsletter_items">
+					<h5>NEWSLETTER</h5>
+					<p>Keep up on our always evolving product features 		and technology. 
+						Enter your e-mail and subscribe to our newsletter.  
+					</p>
+				
+			</div>
+			<form action="">
+				
+				<input type="email" name="name" placeholder="Email address">
+				<button class="btn_subscribe">
+					<img src="assets/Forma%201@1X.png" alt="">
+					<p>subscribe</p>
+				</button>
+			</form>
+			</div>
+			<div class="free_ship">
+				<div class="free_ship--items">
+					<img src="assets/free_ship/1.png" alt="">
+					<p>FREE SHIPPING</p>
+					
+					
+				</div>
+				<div class="free_ship--items">
+					<img src="assets/free_ship/2.png" alt="">
+					<p>CUSTOMER SUPPORT</p>
+					
+					
+				</div>
+				<div class="free_ship--items">
+					<img src="assets/free_ship/3.png" alt="">
+					<p>15 DAYS MONEY BACK</p>
+					
+					
+				</div>
+				<div class="free_ship--items">
+					<img src="assets/free_ship/4.png" alt="">
+					<p>24/7 Help Center</p>
+					
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer">
+		
+			<div class="footer_inner">
+				<div class="footer_items">
+				<img src="assets/footer/iPhone.png" alt="">
+					<p>Call us</p>
+					<p>1-800-277-7766</p>
+				</div>
+				<div class="footer_items">
+					<img src="assets/footer/Location.png" alt="">
+					<p>Location</p>
+					<p><span>Kiev, Bandera str. 32/A</span></p>
+				</div>
+				<div class="footer_items">
+				<img src="assets/footer/Mail.png" alt="">
+					<p>Mail</p>
+					<p><span>info@domain.com</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter">
+			<div class="subfooter_inner">
+				<div class="subfooter_items">
+					<p>2016 Domain.com. All rights reserved</p>
+				</div>
+				<div class="subfooter_items">
+					<a href="">Terms & Conditions</a>
+					<a href=""> Privacy</a>
+					<a href=""> Downloads copy</a>
+				</div>
+				<div class="subfooter_items">
+					<a href=""><img src="assets/social/twitter.png" alt=""></a>
+					<a href=""><img src="assets/social/google.png" alt=""></a>
+					<a href=""><img src="assets/social/facebook.png" alt=""></a>
+				</div>
+			</div>	
+		</div>
+	</div>	
+	<div class="modal">
+     <div class="modal_dialog">
+     	 <div class="product_inner">
+                    <div class="prod_name">
+                         <p>Donegal Stitch Aran Sweater</p>
+                    </div>
+                    <div class="prod_items">
+                             <div class="product_article" data-article="#">Item:<span>IEL53-P</span></div>
+
+                            <div class="reviews_stars--small">
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star-half-alt checked"></i>
+                            </div>
+                            <div class="reviews_qty" data-reviews="">
+                                  126<p>Reviews</p>
+
+                           </div>
+                     </div>
+                     <div class="prod_cost">
+                            <p content= "USD">$</p>
+                             <span  id="totalProductprice">122</span>
+
+                     </div>
+                         <div class="product_shipping">
+                             <p><span>Free standard shipping </span>on orders over $120 <br> Use code SP120 at checkout</p>
+                         </div>
+
+                     <div class="product_description">
+                         <ul>
+                            <li>Five star customer reviews</li>
+                            <li>Beautifully crafted from Donegal merino yarn</li>
+                            <li>Features the classic honeycomb Aran stitch</li>
+                            <li>Model is a US size 8-10 and wears size M</li>
+
+                        </ul>
+                     </div>
+                     <div>Colour</div>
+                     <form>
+                         <div class="product_color">
+
+                            <div class="btn btn_color">
+                               <input type="radio" id="color-green" value="0" name="color">
+                               <label for="color-green"><img src="http://placehold.it/30"></label>
+                               <input type="radio" id="color-white" value="1" name="color">
+                               <label for="color-white"><img src="http://placehold.it/30"></label>
+                               <input type="radio" id="color-gray" value="2" name="color">
+                               <label for="color-gray"><img src="http://placehold.it/30"></label>
+                               <input type="radio" id="color-dark" value="3" name="color">
+                               <label for="color-dark"><img src="http://placehold.it/30"></label>
+                               <input  type="radio" id="color-red" value="4" name="color">
+                               <label for="color-red"><img src="http://placehold.it/30"></label>
+                              <input type="radio" id="color-blue" value="5" name="color">
+                               <label for="color-blue"><img src="http://placehold.it/30"></label>
+                               <input  type="radio" id="color-yellow" value="6" name="color">
+                               <label for="color-yellow"><img src="http://placehold.it/30"></label>
+                           </div>
+                         </div>
+
+                          <div class="product_size">
+                              <p>Size</p>
+                              <i>Size chart</i>
+                              <p>Qty</p>
+
+
+                         </div>
+
+                         <div class="size_item">
+                             <div class="btn btn_size" id="size">
+                                  <input  type="radio" id="size-xs" value="0" name="size" />
+                                  <label for="size-xs">XS</label>
+                                  <input type="radio" id="size-s" value="1" name="size" />
+                                  <label for="size-s">S</label>
+                                  <input  type="radio" id="size-m" value="2" name="size" />
+                                  <label for="size-m">M</label>
+                                  <input  type="radio" id="size-l" value="3" name="size" />
+                                  <label for="size-l">L</label>
+                                  <input  type="radio" id="size-xl" value="4" name="size" />
+                                  <label for="size-xl">XL</label>
+                                  <input  type="radio" id="size-xxl" value="5" name="size" />
+                                  <label for="size-xxl">XXL</label>
+
+                             </div>
+                             <div>
+                                 <input  class="raz" id="inputQuantity"  type="number" min="1" value="1" name="#">
+
+
+                             </div>
+                         </div>
+
+                         <div class="add_button">
+
+                                <input class="addtobag_btn" type="button" value="Add To Bag" name="addtobag_btn"/>
+                               
+
+                        </div>
+                     </form>
+                 </div><!--product_inner-->
+      </div>
+  </div>
+	
+			
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+           <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+           <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+           
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+           
+
+           <script src="app.js"></script>
+
+</body>
+</html>

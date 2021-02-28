@@ -1,0 +1,113 @@
+//main: ..style.less;
+
+.shop_sort{
+  display: inline-flex;
+    position: relative;
+    width: 100%;
+	height: 46px;
+    max-width: 900px;
+    text-align: left;
+    padding: 6px 5px;
+    background-color: @white;
+	color: @black;
+	font-size: 15px;
+   	font-weight: bold;
+	
+}
+
+.shop_sort p{
+    margin: 6px 14px 0;
+}
+
+.sort_two{
+    order: 10;
+}
+
+select{
+    width: 101px;
+    height: 31px;
+    outline: none;
+	font-size: 15px;
+    font-weight: bold;
+	border-color: @border;
+
+	}
+
+.sort_icons{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+	
+
+}
+
+.sort_icons input{
+	display: none;
+}
+
+
+
+.sort_icons .fa-microsoft{
+    border: 1px solid @active;
+    padding: 7px 7px;
+	
+	&:hover{
+		opacity: 50%;
+	}
+	
+	
+}
+
+.sort_icons .fa-list{
+    border: 1px solid @active;
+    padding: 7px 7px;
+	
+	&:hover{
+		opacity: 50%;
+	}
+}
+
+.sort_icons input[type="radio"]:checked + label {
+    .btn_check(@active);
+	
+}
+
+.titles_three{
+    margin-top: 25px;
+}
+	 
+.shop_icons{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+ .shop_icons a{
+    text-align: center;
+    border: 1px solid #000;
+    margin-right: 2px;
+    cursor: pointer;
+	 padding: 4px 0;
+	 
+	 &:last-child{
+		 padding-top: 7px;
+	 }
+}
+
+.icons_num a{
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    border: 1px solid @border;
+
+    margin-right: 2px;
+  
+	&:first-child{
+    background-color: @active;
+	color: @white;
+		
+	}
+}

@@ -1,0 +1,111 @@
+//main: ..style.less;
+
+/*Slick slider*/
+
+.slider{
+	
+	height: 483px;
+		
+}
+
+.slider_inner{
+	height: 100%;
+	
+	border: 1px solid @border;
+	background: url("../assets/Layer.png");
+
+
+}
+
+.slider_text{
+	margin: 100px 0 0 40px ;
+	
+}
+
+.slider_text p{
+	font-size: 75px;
+	line-height: 1;
+}
+
+.slider_text span{
+	font-size: 20px;
+}
+
+.slider_btn{
+	margin-top: 68px;
+	width: 111px;
+	height: 41px;
+	text-align: center;
+	line-height: 41px;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	outline: none;
+	color: @white;
+	.btn_hover(@active);
+}
+
+
+
+/*Slider*/
+
+.slider1{
+    margin: 35px 0;
+    width: 263px;
+}
+
+.slider1_inner{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	
+}
+
+
+.ui-slider{
+
+    background-color: @white;
+    height:3px;
+    opacity: 0.7;
+    position: relative;
+}
+
+.ui-slider:hover{
+    opacity: 1;
+}
+
+.ui-slider-range{
+    height: 3px;
+    background: @active;
+	position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+    z-index: 1;
+    display: block;
+    border: 0;
+    
+}
+
+.ui-slider-handle {
+    position: absolute;
+	z-index: 2;
+    top: -3px;
+    width: 10px;
+    height: 10px;
+	touch-action: none;
+
+    background: @active;
+
+    cursor: pointer;
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    outline: none;
+}
+
+
+
+
+

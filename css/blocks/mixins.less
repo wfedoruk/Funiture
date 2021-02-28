@@ -1,0 +1,46 @@
+//main: ..style.less;
+
+.btn_hover(@bg) {
+    background-color: @bg;
+   
+    
+    &:hover {
+        background-color: darken(@bg, 10%);
+    }
+	
+	&:focus{
+    	color:  lighten(@bg, 10%);
+	}
+}
+
+
+.items_hover(@bg) {
+    color: @bg;
+   
+    &:hover,
+    &:focus {
+        
+		.items_img{	
+			opacity: 0.2;
+		}
+		.items_text h4{
+			color: @active;
+		}
+    }
+}
+
+
+.btn_check(@bg) {
+    background-color: @bg;
+	color: @black;
+   	  
+    &:hover {
+        background-color: darken(@bg, 10%);
+    }
+	
+	&:focus {
+        background-color: darken(@bg, 10%);
+    }
+}
+
+
